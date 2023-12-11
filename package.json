@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "-": "^0.0.1",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,6 +13,7 @@
     "@types/node": "^16.18.68",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
+    "D": "^1.0.0",
     "r3f-pack": "^2.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -24,7 +28,11 @@
     "eslint:check": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
     "eslint:fix": "eslint . --fix --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
     "prettier:check": "prettier . --check . ",
-    "prettier:format": "prettier \"**/*.{html,css,js,cjs,jsx,ts,tsx,json,md}\" --cache --write"
+    "prettier:format": "prettier \"**/*.{html,css,js,cjs,jsx,ts,tsx,json,md}\" --cache --write",
+    "husky:prepare": "husky install",
+    "husky:pre-commit": "npx husky add .husky/pre-commit \"npx lint-staged --concurrent false --relative\"",
+    "husky:commit-msg": "npx husky add .husky/commit-msg \"npx commitlint --edit $1\"",
+    "lint-staged:run": "lint-staged"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +62,8 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.1.1"
   }
 }
