@@ -10,6 +10,7 @@
     "@types/node": "^16.18.68",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
+    "r3f-pack": "^2.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^4.9.5",
@@ -19,7 +20,11 @@
     "start": "r3f-pack start",
     "build": "r3f-pack build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint:check": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "eslint:fix": "eslint . --fix --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "prettier:check": "prettier . --check . ",
+    "prettier:format": "prettier \"**/*.{html,css,js,cjs,jsx,ts,tsx,json,md}\" --cache --write"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +45,15 @@
     ]
   },
   "devDependencies": {
-    "r3f-pack": "^2.6.1"
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.1.1"
   }
 }
