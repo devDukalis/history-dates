@@ -3,29 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "-": "^0.0.1",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.68",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
-    "D": "^1.0.0",
     "r3f-pack": "^2.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.5",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "swiper": "^11.0.5",
+    "typescript": "^4.9.5"
   },
   "scripts": {
     "start": "r3f-pack start",
     "build": "r3f-pack build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "eslint:check": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
     "eslint:fix": "eslint . --fix --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
     "prettier:check": "prettier . --check . ",
@@ -37,8 +28,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
