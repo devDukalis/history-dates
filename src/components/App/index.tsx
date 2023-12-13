@@ -1,9 +1,7 @@
+import PageContainer from "../PageContainer";
+
 const App = () => {
-  return (
-    <div>
-      <p>привет</p>
-    </div>
-  );
+  return <PageContainer />;
 };
 
 export default App;

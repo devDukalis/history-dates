@@ -1,0 +1,38 @@
+@import "src/scss/variables";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  @media screen and (max-width: 550px) {
+    margin-bottom: 103px;
+  }
+}
+
+.itemDate {
+  color: $date--blue;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  @media screen and (max-width: 550px) {
+    line-height: 120%;
+    font-size: 16px;
+  }
+}
+
+.itemDescription {
+  height: 90px;
+  overflow-y: auto;
+  color: $text--primary;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  word-break: break-word;
+  @media screen and (max-width: 550px) {
+    line-height: 145%;
+    font-size: 14px;
+  }
+}

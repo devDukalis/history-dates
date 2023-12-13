@@ -1,0 +1,28 @@
+@import "src/scss/variables";
+
+.buttonNext {
+  background-color: white;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buttonNext::after {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid $date--blue;
+  border-left: 2px solid $date--blue;
+  top: 16px;
+}
+
+.buttonNext::after {
+  left: 14px;
+  transform: rotate(135deg);
+}

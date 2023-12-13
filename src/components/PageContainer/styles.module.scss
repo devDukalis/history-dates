@@ -1,0 +1,67 @@
+@import "src/scss/variables";
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-left: 1px solid $line--primary;
+  border-right: 1px solid $line--primary;
+  position: relative;
+  padding-top: 215px;
+  padding-bottom: 104px;
+
+  @media screen and (max-width: 550px) {
+    padding: 59px 0 13px 0;
+
+    .lineGradient,
+    .lineHorizontal,
+    .lineVertical {
+      display: none;
+    }
+
+    .title {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-bottom: 56px;
+      padding-left: 20px;
+    }
+  }
+}
+
+.lineGradient {
+  position: absolute;
+  top: 177px;
+  left: 0;
+
+  @media screen and (max-width: 1024px) {
+    top: 155px;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 135px;
+  }
+}
+
+.lineHorizontal {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 480px;
+  background-color: $line--primary;
+}
+
+.lineVertical {
+  border-left: 1px solid $line--primary;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.5px;
+  top: 0;
+}
+
+.title {
+  position: absolute;
+  top: 170px;
+  left: 78px;
+}

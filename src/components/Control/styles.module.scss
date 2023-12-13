@@ -1,0 +1,66 @@
+@import "src/scss/variables";
+
+.control {
+  display: flex;
+  gap: 0 20px;
+  @media screen and (max-width: 550px) {
+    gap: 0 8px;
+  }
+
+  button {
+    display: block;
+    background: none;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border: 1px solid $circle--small;
+    border-radius: 50%;
+    cursor: pointer;
+    @media screen and (max-width: 550px) {
+      height: 25px;
+      width: 25px;
+    }
+  }
+
+  button::after {
+    content: "";
+    position: absolute;
+    z-index: 11;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid $line--hover;
+    border-left: 2px solid $line--hover;
+    top: 20px;
+    @media screen and (max-width: 550px) {
+      width: 5px;
+      height: 5px;
+      top: 9px;
+    }
+  }
+
+  button:hover {
+    border-color: $text--primary;
+    background-color: $bg--hover;
+    &:after {
+      border-top: 2px solid $text--primary;
+      border-left: 2px solid $text--primary;
+    }
+  }
+}
+
+.buttonNext::after {
+  left: 17px;
+  transform: rotate(135deg);
+  @media screen and (max-width: 550px) {
+    left: 8px;
+  }
+}
+
+.buttonPrev::after {
+  left: 20px;
+  transform: rotate(-45deg);
+  @media screen and (max-width: 550px) {
+    left: 10px;
+  }
+}
