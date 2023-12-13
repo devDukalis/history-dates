@@ -1,7 +1,13 @@
+import MouseTracker from "../MouseTracker";
 import PageContainer from "../PageContainer";
 
 const App = () => {
-  return <PageContainer />;
+  return (
+    <>
+      <MouseTracker />
+      <PageContainer />
+    </>
+  );
 };
 
 export default App;
