@@ -34,10 +34,12 @@
 
 ## Инструкция по запуску
 
+⚠️ Убедитесь что у вас установлен [Node.js](https://nodejs.org/en)
+
 Клонировать репозиторий
 
-- `git@github.com:devDukalis/history-dates.git` или
-- `https://github.com/devDukalis/history-dates.git`
+- `git clone git@github.com:devDukalis/history-dates.git` или
+- `git clone https://github.com/devDukalis/history-dates.git`
 
 Установить зависимости проекта
 
