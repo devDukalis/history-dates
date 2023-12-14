@@ -36,17 +36,21 @@
 
 ⚠️ Убедитесь что у вас установлен [Node.js](https://nodejs.org/en)
 
-Клонировать репозиторий
+**Клонировать репозиторий**
 
 - `git clone git@github.com:devDukalis/history-dates.git` или
 - `git clone https://github.com/devDukalis/history-dates.git`
 
-Установить зависимости проекта
+**Перейти в каталог с проектом**
+
+Например, `cd history-dates`
+
+**Установить зависимости проекта**
 
 Например, используя **NPM** (Node Package Manager)
 
 `npm i`
 
-Запустить проект
+**Запустить проект**
 
 `npm run start`
